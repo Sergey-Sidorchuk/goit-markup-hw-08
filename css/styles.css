@@ -1,6 +1,195 @@
-body a {
+/* Цвет основного текста #212121 */
+/* Вторичный тескт цвета  #757575 */
+/* белый #FFFFFF; */
+/* Футер адрес color: rgba(255, 255, 255, 0.6); */
+
+/* Лого color: #2196f3;
+ Лого color: #000000; */
+
+body {
+  /* color: black; */
+}
+a {
   text-decoration: none;
 }
 li {
   list-style: none;
+}
+/* <!-- Шапка сайта --> */
+/* logo */
+.logoweb {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700px;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.17;
+  color: #2196f3;
+}
+.accent {
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.17;
+}
+.site-nav .link.current {
+  color: #2196f3;
+}
+.link {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.link:hover {
+  color: #2196f3;
+}
+.link:focus {
+  color: #2196f3;
+}
+
+.link-tel {
+  color: #757575;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.section-title {
+  color: #212121;
+}
+/* <!-- Герой --> */
+.hero {
+  background: #2f303a;
+}
+
+.hero-title {
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+button {
+  background: #2196f3;
+  color: #ffffff;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+}
+/* <!-- <h2>Особенности</h2> --> */
+.section-features {
+  background: fff;
+}
+
+.section-features .section-title {
+  font-family: Roboto, sans-serif;
+  font-style: bold;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.section-features .text {
+  font-family: Roboto, sans-serif;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 1.71;
+  align: left;
+  vertical-align: Top;
+  letter-spacing: 3%;
+  color: #757575;
+}
+/* <!-- Чем мы занимаемся --> */
+.section-work .section-title {
+  font-family: Roboto, sans-serif;
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 1.17;
+  align: center;
+  vertical-align: Top;
+  letter-spacing: 3%;
+}
+/* <!-- Наша команда --> */
+.section-team .section-title {
+  font-family: Roboto, sans-serif;
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 1.17;
+  align: center;
+  vertical-align: Top;
+  letter-spacing: 3%;
+}
+.section-team .title-name {
+  font-family: Roboto, sans-serif;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 1.19;
+  align: Center;
+  vertical-align: Top;
+  letter-spacing: 3%;
+}
+.section-team p {
+  font-family: Roboto, sans-serif;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 1.19;
+  align: Center;
+  vertical-align: Top;
+  letter-spacing: 3%;
+  color: #757575;
+}
+/* футер */
+.footer {
+  background: #2f303a;
+}
+.footer .logoweb {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700px;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.17;
+  color: #2196f3;
+}
+.footer .accent {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 1.17;
+}
+.footer p {
+  font-family: Roboto, sans-serif;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 1.71;
+  align: Left;
+  vertical-align: Top;
+  letter-spacing: 3%;
+  color: rgba(255, 255, 255, 1);
+}
+.footer a {
+  font-family: Roboto, sans-serif;
+  font-style: Regular;
+  font-size: 14px;
+  line-height: 1.71;
+  align: left;
+  vertical-align: Top;
+  letter-spacing: 3%;
+  color: rgba(255, 255, 255, 0.6);
 }
