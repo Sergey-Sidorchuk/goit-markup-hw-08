@@ -1,13 +1,9 @@
-/* Цвет основного текста #212121 */
-/* Вторичный тескт цвета  #757575 */
-/* белый #FFFFFF; */
-/* Футер адрес color: rgba(255, 255, 255, 0.6); */
-
-/* Лого color: #2196f3;
- Лого color: #000000; */
-
-body {
-  /* color: black; */
+:root {
+  --main-color: #212121;
+  --secondary-color: #757575;
+  --link-color: #2196f3;
+  --white-color: #ffffff;
+  --background-color: #2f303a;
 }
 a {
   text-decoration: none;
@@ -23,7 +19,7 @@ li {
   font-style: normal;
   font-size: 26px;
   line-height: 1.17;
-  color: #2196f3;
+  color: var(--link-color);
 }
 .accent {
   font-family: "Raleway", sans-serif;
@@ -34,7 +30,7 @@ li {
   line-height: 1.17;
 }
 .site-nav .link.current {
-  color: #2196f3;
+  color: var(--link-color);
 }
 .link {
   font-family: Roboto, sans-serif;
@@ -43,17 +39,17 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-color);
 }
 .link:hover {
-  color: #2196f3;
+  color: var(--link-color);
 }
 .link:focus {
-  color: #2196f3;
+  color: var(--link-color);
 }
 
 .link-tel {
-  color: #757575;
+  color: var(--secondary-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -63,15 +59,15 @@ li {
 }
 
 .section-title {
-  color: #212121;
+  color: var(--main-color);
 }
 /* <!-- Герой --> */
 .hero {
-  background: #2f303a;
+  background: var(--background-color);
 }
 
 .hero-title {
-  color: #ffffff;
+  color: var(--white-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 900;
@@ -83,7 +79,7 @@ li {
 }
 button {
   background: #2196f3;
-  color: #ffffff;
+  color: var(--white-color);
   font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -94,7 +90,7 @@ button {
 }
 /* <!-- <h2>Особенности</h2> --> */
 .section-features {
-  background: fff;
+  background: #fff;
 }
 
 .section-features .section-title {
@@ -112,7 +108,7 @@ button {
   align: left;
   vertical-align: Top;
   letter-spacing: 3%;
-  color: #757575;
+  color: var(--secondary-color);
 }
 /* <!-- Чем мы занимаемся --> */
 .section-work .section-title {
@@ -151,7 +147,7 @@ button {
   align: Center;
   vertical-align: Top;
   letter-spacing: 3%;
-  color: #757575;
+  color: var(--secondary-color);
 }
 /* футер */
 .footer {
@@ -163,11 +159,11 @@ button {
   font-style: normal;
   font-size: 26px;
   line-height: 1.17;
-  color: #2196f3;
+  color: var(--link-color);
 }
 .footer .accent {
   font-family: "Raleway", sans-serif;
-  color: #ffffff;
+  color: var(--white-color);
   font-weight: bold;
   font-style: normal;
   font-size: 26px;
@@ -192,4 +188,39 @@ button {
   vertical-align: Top;
   letter-spacing: 3%;
   color: rgba(255, 255, 255, 0.6);
+}
+/* портфолио */
+.nav-button .work-list {
+  color: var(--main-color);
+  background: #f5f4fa;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: 0px;
+}
+.work-list:hover {
+  background: var(--link-color);
+  color: var(--white-color);
+}
+.dev h2 {
+  color: var(--main-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.dev p {
+  color: var(--secondary-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
