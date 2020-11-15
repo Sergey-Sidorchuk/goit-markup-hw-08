@@ -206,6 +206,10 @@ button {
   background: var(--link-color);
   color: var(--white-color);
 }
+.work-list:focus {
+  background: var(--link-color);
+  color: var(--white-color);
+}
 .dev h2 {
   color: var(--main-color);
   font-family: Roboto, sans-serif;
