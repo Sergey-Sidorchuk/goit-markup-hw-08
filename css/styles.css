@@ -5,6 +5,9 @@
   --white-color: #ffffff;
   --background-color: #2f303a;
 }
+body {
+  font-family: Roboto, sans-serif;
+}
 a {
   text-decoration: none;
 }
@@ -15,8 +18,7 @@ li {
 /* logo */
 .logoweb {
   font-family: "Raleway", sans-serif;
-  font-weight: 700px;
-  font-style: normal;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
   color: var(--link-color);
@@ -25,7 +27,6 @@ li {
   font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: bold;
-  font-style: normal;
   font-size: 26px;
   line-height: 1.17;
 }
@@ -33,8 +34,6 @@ li {
   color: var(--link-color);
 }
 .link {
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -50,12 +49,13 @@ li {
 
 .link-tel {
   color: var(--secondary-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+.site-contacts .link {
+  color: var(--link-color);
 }
 
 .section-title {
@@ -68,8 +68,6 @@ li {
 
 .hero-title {
   color: var(--white-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -81,7 +79,6 @@ button {
   background: #2196f3;
   color: var(--white-color);
   font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -94,14 +91,12 @@ button {
 }
 
 .section-features .section-title {
-  font-family: Roboto, sans-serif;
   font-style: bold;
   font-size: 14px;
   line-height: 1.14;
 }
 
 .section-features .text {
-  font-family: Roboto, sans-serif;
   font-style: Regular;
   font-size: 14px;
   line-height: 1.71;
@@ -112,7 +107,6 @@ button {
 }
 /* <!-- Чем мы занимаемся --> */
 .section-work .section-title {
-  font-family: Roboto, sans-serif;
   font-style: Bold;
   font-size: 36px;
   line-height: 1.17;
@@ -122,7 +116,6 @@ button {
 }
 /* <!-- Наша команда --> */
 .section-team .section-title {
-  font-family: Roboto, sans-serif;
   font-style: Bold;
   font-size: 36px;
   line-height: 1.17;
@@ -131,7 +124,6 @@ button {
   letter-spacing: 3%;
 }
 .section-team .title-name {
-  font-family: Roboto, sans-serif;
   font-style: Medium;
   font-size: 16px;
   line-height: 1.19;
@@ -140,7 +132,6 @@ button {
   letter-spacing: 3%;
 }
 .section-team p {
-  font-family: Roboto, sans-serif;
   font-style: Regular;
   font-size: 16px;
   line-height: 1.19;
@@ -155,8 +146,7 @@ button {
 }
 .footer .logoweb {
   font-family: "Raleway", sans-serif;
-  font-weight: 700px;
-  font-style: normal;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
   color: var(--link-color);
@@ -165,24 +155,21 @@ button {
   font-family: "Raleway", sans-serif;
   color: var(--white-color);
   font-weight: bold;
-  font-style: normal;
   font-size: 26px;
   line-height: 1.17;
 }
 .footer p {
-  font-family: Roboto, sans-serif;
-  font-style: Regular;
   font-size: 14px;
   line-height: 1.71;
+  font-style: normal;
   align: Left;
   vertical-align: Top;
   letter-spacing: 3%;
   color: rgba(255, 255, 255, 1);
 }
 .footer a {
-  font-family: Roboto, sans-serif;
-  font-style: Regular;
   font-size: 14px;
+  font-style: normal;
   line-height: 1.71;
   align: left;
   vertical-align: Top;
@@ -193,8 +180,6 @@ button {
 .nav-button .work-list {
   color: var(--main-color);
   background: #f5f4fa;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -212,8 +197,6 @@ button {
 }
 .dev h2 {
   color: var(--main-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
@@ -221,8 +204,6 @@ button {
 }
 .dev p {
   color: var(--secondary-color);
-  font-family: Roboto, sans-serif;
-  font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.88;
