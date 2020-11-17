@@ -98,7 +98,9 @@ button {
 .section-features .section-title {
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .section-features .text {
