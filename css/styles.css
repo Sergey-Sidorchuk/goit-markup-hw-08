@@ -55,9 +55,14 @@ li {
   letter-spacing: 0.02em;
 }
 .site-contacts .link {
+  color: var(--secondary-color);
+}
+.site-contacts .link:hover {
   color: var(--link-color);
 }
-
+.site-contacts .link:focus {
+  color: var(--link-color);
+}
 .section-title {
   color: var(--main-color);
 }
@@ -91,13 +96,13 @@ button {
 }
 
 .section-features .section-title {
-  font-style: bold;
+  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
 }
 
 .section-features .text {
-  font-style: Regular;
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   align: left;
@@ -107,7 +112,7 @@ button {
 }
 /* <!-- Чем мы занимаемся --> */
 .section-work .section-title {
-  font-style: Bold;
+  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   align: center;
@@ -116,7 +121,7 @@ button {
 }
 /* <!-- Наша команда --> */
 .section-team .section-title {
-  font-style: Bold;
+  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
   align: center;
@@ -124,7 +129,7 @@ button {
   letter-spacing: 3%;
 }
 .section-team .title-name {
-  font-style: Medium;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   align: Center;
@@ -132,7 +137,6 @@ button {
   letter-spacing: 3%;
 }
 .section-team p {
-  font-style: Regular;
   font-size: 16px;
   line-height: 1.19;
   align: Center;
@@ -159,17 +163,17 @@ button {
   line-height: 1.17;
 }
 .footer p {
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  font-style: normal;
   align: Left;
   vertical-align: Top;
   letter-spacing: 3%;
   color: rgba(255, 255, 255, 1);
 }
 .footer a {
-  font-size: 14px;
   font-style: normal;
+  font-size: 14px;
   line-height: 1.71;
   align: left;
   vertical-align: Top;
