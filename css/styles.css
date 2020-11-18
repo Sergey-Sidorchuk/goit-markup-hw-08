@@ -26,7 +26,7 @@ li {
 .accent {
   font-family: "Raleway", sans-serif;
   color: #000000;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
 }
@@ -96,7 +96,7 @@ button {
 }
 
 .section-features .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
@@ -104,7 +104,7 @@ button {
 }
 
 .section-features .text {
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   align: left;
@@ -114,7 +114,7 @@ button {
 }
 /* <!-- Чем мы занимаемся --> */
 .section-work .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   align: center;
@@ -123,7 +123,7 @@ button {
 }
 /* <!-- Наша команда --> */
 .section-team .section-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   align: center;
@@ -160,7 +160,7 @@ button {
 .footer .accent {
   font-family: "Raleway", sans-serif;
   color: var(--white-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
 }
@@ -203,14 +203,14 @@ button {
 }
 .dev h2 {
   color: var(--main-color);
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .dev p {
   color: var(--secondary-color);
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
