@@ -14,8 +14,27 @@ a {
 li {
   list-style: none;
 }
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* <!-- Шапка сайта --> */
 /* logo */
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
 .logoweb {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -29,6 +48,16 @@ li {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
+}
+.site-nav {
+  display: flex;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 93px;
+  justify-content: space-around;
+}
+.site-nav li:not(:last-child) {
+  margin-right: 50px;
 }
 .site-nav .link.current {
   color: var(--link-color);
@@ -54,6 +83,18 @@ li {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.site-contacts {
+  display: flex;
+  padding-left: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.site-contacts li:first-child {
+  margin-right: 50px;
+}
+
 .site-contacts .link {
   color: var(--secondary-color);
 }
@@ -65,10 +106,18 @@ li {
 }
 .section-title {
   color: var(--main-color);
+  margin: 0px;
 }
 /* <!-- Герой --> */
 .hero {
   background: var(--background-color);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero-title {
@@ -79,6 +128,8 @@ li {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 button {
   background: #2196f3;
@@ -93,6 +144,24 @@ button {
 /* <!-- <h2>Особенности</h2> --> */
 .section-features {
   background: #fff;
+}
+.features {
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 0px;
+}
+.features li {
+  width: 270px;
+}
+.features p {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+.features li:not(:last-child) {
+  margin-right: 30px;
 }
 
 .section-features .section-title {
@@ -111,6 +180,7 @@ button {
   vertical-align: Top;
   letter-spacing: 3%;
   color: var(--secondary-color);
+  letter-spacing: 0.03em;
 }
 /* <!-- Чем мы занимаемся --> */
 .section-work .section-title {
@@ -121,7 +191,27 @@ button {
   vertical-align: Top;
   letter-spacing: 3%;
 }
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work ul {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+  padding-bottom: 94px;
+}
+.work li:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* <!-- Наша команда --> */
+.section-team {
+  background: #f5f4fa;
+}
 .section-team .section-title {
   font-weight: 700;
   font-size: 36px;
