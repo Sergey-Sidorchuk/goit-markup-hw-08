@@ -18,7 +18,7 @@ li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1170px;
+  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
@@ -51,10 +51,13 @@ li {
 }
 .site-nav {
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   margin-left: 93px;
   justify-content: space-around;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .site-nav li:not(:last-child) {
   margin-right: 50px;
@@ -140,6 +143,8 @@ button {
   line-height: 1.88;
   align-items: center;
   text-align: center;
+  width: 200px;
+  height: 50px;
 }
 /* <!-- <h2>Особенности</h2> --> */
 .section-features {
@@ -212,6 +217,24 @@ button {
 .section-team {
   background: #f5f4fa;
 }
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team ul {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+.team li:not(:last-child) {
+  margin-right: 30px;
+}
+
 .section-team .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -227,6 +250,7 @@ button {
   align: Center;
   vertical-align: Top;
   letter-spacing: 3%;
+  margin-bottom: 0px;
 }
 .section-team p {
   font-size: 16px;
@@ -235,17 +259,39 @@ button {
   vertical-align: Top;
   letter-spacing: 3%;
   color: var(--secondary-color);
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
 /* футер */
 .footer {
   background: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+.footer .foot {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.foot ul {
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.foot li {
+  margin-top: 9px;
+}
+
 .footer .logoweb {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
   color: var(--link-color);
+}
+.address {
+  margin-top: 20px;
 }
 .footer .accent {
   font-family: "Raleway", sans-serif;
@@ -262,6 +308,8 @@ button {
   vertical-align: Top;
   letter-spacing: 3%;
   color: rgba(255, 255, 255, 1);
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 .footer a {
   font-style: normal;
@@ -273,6 +321,24 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 /* портфолио */
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+.nav-button {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  padding-top: 94px;
+}
+.nav-button li:not(:last-child) {
+  margin-right: 8px;
+}
+.nav-button li {
+  display: list-item;
+}
 .nav-button .work-list {
   color: var(--main-color);
   background: #f5f4fa;
@@ -282,6 +348,11 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   border: 0px;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-left: 22px;
+  padding-bottom: 6px;
+  padding-right: 22px;
 }
 .work-list:hover {
   background: var(--link-color);
@@ -290,6 +361,17 @@ button {
 .work-list:focus {
   background: var(--link-color);
   color: var(--white-color);
+}
+.dev {
+  padding-left: 0px;
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.dev li {
+  border: 1px solid #eeeeee;
 }
 .dev h2 {
   color: var(--main-color);

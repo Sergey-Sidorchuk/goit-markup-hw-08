@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>goit-разметка-hw-01</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -10,10 +11,9 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>goit-разметка-hw-01</title>
   </head>
   <body>
     <!-- Шапка сайта -->
@@ -126,7 +126,7 @@
       </section>
       <!-- Наша команда -->
       <section class="section-team">
-        <div class="container">
+        <div class="container team">
           <h2 class="section-title">Наша команда</h2>
           <ul>
             <li>
@@ -177,16 +177,21 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <a href="">
-          <span class="logoweb">Web</span><span class="accent">Studio</span></a
-        >
-        <address>
-          <p>г. Киев, пр-т Леси Украинки, 26</p>
-          <ul>
-            <li><a href="mailto:info@example.com">info@example.com</a></li>
-            <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
-          </ul>
-        </address>
+        <div class="foot">
+          <a href="">
+            <span class="logoweb">Web</span
+            ><span class="accent">Studio</span></a
+          >
+          <div class="address">
+            <address>
+              <p>г. Киев, пр-т Леси Украинки, 26</p>
+              <ul>
+                <li><a href="mailto:info@example.com">info@example.com</a></li>
+                <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+              </ul>
+            </address>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
