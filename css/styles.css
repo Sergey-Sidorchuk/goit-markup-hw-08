@@ -159,8 +159,8 @@ button {
 /* <!-- <h2>Особенности</h2> --> */
 .section-features {
   background: #fff;
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .features {
   display: flex;
@@ -201,7 +201,7 @@ button {
 /* <!-- Чем мы занимаемся --> */
 
 .section-work {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 .section-work .section-title {
   font-weight: 700;
