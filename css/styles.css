@@ -146,6 +146,7 @@ img {
   margin-top: 0px;
   margin-bottom: 30px;
 }
+
 button {
   background: #2196f3;
   color: var(--white-color);
@@ -159,8 +160,11 @@ button {
   padding: 10px 32px;
   margin: 0px;
   border: 0px;
+}
+.hero button {
   min-width: 200px;
 }
+
 /* <!-- <h2>Особенности</h2> --> */
 .section-features {
   background: #fff;
