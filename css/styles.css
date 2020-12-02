@@ -21,9 +21,6 @@ img {
   height: auto;
 }
 .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
@@ -135,6 +132,7 @@ img {
 .hero .container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .hero-title {
@@ -371,7 +369,7 @@ button {
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 0px;
 }
 .nav-button li:not(:last-child) {
@@ -423,6 +421,9 @@ button {
 }
 .dev a {
   display: block;
+}
+.dev li {
+  width: 370px;
 }
 .dev li:nth-child(-n + 6) {
   margin-bottom: 30px;
