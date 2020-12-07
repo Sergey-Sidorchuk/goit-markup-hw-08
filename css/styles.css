@@ -344,8 +344,6 @@ button {
   justify-content: space-between;
 }
 
-/* #afb1b8; */
-/* } */
 .network a {
   display: flex;
   justify-content: center;
@@ -358,14 +356,11 @@ button {
 }
 .network a:hover {
   background: var(--link-color);
+  color: #fff;
 }
 .network a:focus {
   background: var(--link-color);
 }
-.net-soc:hover {
-  fill: #fff;
-}
-
 .net-soc {
   fill: currentColor;
 }
@@ -487,7 +482,7 @@ button {
   margin-bottom: 9px;
   margin-top: 0px;
 }
-.footer a {
+.address a {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -520,18 +515,20 @@ button {
   margin-right: 10px;
 }
 .soc {
+  width: 44px;
+  height: 44px;
   display: flex;
-  color: #afb1b8;
-  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-}
-.inst {
+  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #afb1b8;
-  fill: ;
 }
-.inst:hover {
-  fill: var(--link-color);
+.soc:hover {
+  background-color: var(--link-color);
+}
+.foot-icon {
+  fill: currentColor;
 }
 
 /* портфолио */
