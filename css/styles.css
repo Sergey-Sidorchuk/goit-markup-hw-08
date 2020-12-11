@@ -43,9 +43,6 @@ img {
   display: flex;
   align-items: center;
 }
-.logo:focus {
-  background: inherit;
-}
 .logoweb {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -89,10 +86,13 @@ img {
 }
 .link:hover {
   color: var(--link-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .link:focus {
   color: var(--link-color);
-  background: #fff;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .link-tel {
@@ -107,10 +107,13 @@ img {
 }
 .link-tel:hover {
   color: var(--link-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .link-tel:focus {
   color: var(--link-color);
-  background: #fff;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .site-contacts {
@@ -150,9 +153,13 @@ img {
 }
 .site-contacts .link:hover {
   color: var(--link-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .site-contacts .link:focus {
   color: var(--link-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .section-title {
   color: var(--main-color);
@@ -382,10 +389,14 @@ button {
 .network a:hover {
   background: var(--link-color);
   color: #fff;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .network a:focus {
   background: var(--link-color);
   color: #ffffff;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .net-soc {
   fill: currentColor;
@@ -452,10 +463,13 @@ button {
 }
 .logo-company:hover {
   color: var(--link-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .logo-company:focus {
   color: var(--link-color);
-  background: #fff;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 /* футер */
@@ -481,9 +495,6 @@ button {
 }
 .foot li:first-child {
   margin-bottom: 9px;
-}
-.foot > a:focus {
-  background: inherit;
 }
 .footer .logoweb {
   font-family: "Raleway", sans-serif;
@@ -556,8 +567,10 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .soc:hover,
-:focus {
+.soc:focus {
   background-color: var(--link-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .foot-icon {
   fill: currentColor;
@@ -603,10 +616,14 @@ button {
 .work-list:hover {
   background: var(--link-color);
   color: var(--white-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .work-list:focus {
   background: var(--link-color);
   color: var(--white-color);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .dev {
   padding-left: 0px;
@@ -633,9 +650,13 @@ button {
   width: 370px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .dev a:focus {
   background: inherit;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 .dev li:nth-child(-n + 6) {
   margin-bottom: 30px;
