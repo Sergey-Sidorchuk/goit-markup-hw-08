@@ -379,6 +379,7 @@ button {
 }
 .network a:focus {
   background: var(--link-color);
+  color: #ffffff;
 }
 .net-soc {
   fill: currentColor;
@@ -543,7 +544,8 @@ button {
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.1);
 }
-.soc:hover {
+.soc:hover,
+:focus {
   background-color: var(--link-color);
 }
 .foot-icon {
