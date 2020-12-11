@@ -43,6 +43,9 @@ img {
   display: flex;
   align-items: center;
 }
+.logo:focus {
+  background: inherit;
+}
 .logoweb {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -50,6 +53,7 @@ img {
   line-height: 1.17;
   color: var(--link-color);
 }
+
 .accent {
   font-family: "Raleway", sans-serif;
   color: #000000;
@@ -88,6 +92,7 @@ img {
 }
 .link:focus {
   color: var(--link-color);
+  background: #fff;
 }
 
 .link-tel {
@@ -105,6 +110,7 @@ img {
 }
 .link-tel:focus {
   color: var(--link-color);
+  background: #fff;
 }
 
 .site-contacts {
@@ -394,7 +400,7 @@ button {
   margin-top: 10px;
   margin-bottom: 0px;
 }
-/* Наши клиенты */
+/* <!-- Постоянные клиенты --> */
 .section-clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -444,9 +450,12 @@ button {
   margin: 0px;
   fill: currentColor;
 }
-.logo-company:hover,
-:focus {
+.logo-company:hover {
   color: var(--link-color);
+}
+.logo-company:focus {
+  color: var(--link-color);
+  background: #fff;
 }
 
 /* футер */
@@ -473,7 +482,9 @@ button {
 .foot li:first-child {
   margin-bottom: 9px;
 }
-
+.foot > a:focus {
+  background: inherit;
+}
 .footer .logoweb {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -622,6 +633,9 @@ button {
   width: 370px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.dev a:focus {
+  background: inherit;
 }
 .dev li:nth-child(-n + 6) {
   margin-bottom: 30px;
