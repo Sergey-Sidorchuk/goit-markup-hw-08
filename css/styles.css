@@ -314,8 +314,30 @@ button {
   padding-left: 0px;
   margin-bottom: 0px;
 }
+
 .section-work li:not(:last-child) {
   margin-right: 30px;
+}
+.section-work li {
+  position: relative;
+}
+.work p {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
+  position: absolute;
+  width: 100%;
+  margin: 0px;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0px;
+  left: 0px;
+  padding-top: 27px;
+  padding-bottom: 27px;
 }
 
 /* <!-- Наша команда --> */
@@ -658,6 +680,7 @@ button {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
+
 .dev li:nth-child(-n + 6) {
   margin-bottom: 30px;
 }
@@ -666,6 +689,33 @@ button {
 }
 .dev li:nth-of-type(3n + 0) {
   margin-right: 0px;
+}
+.dev-item {
+  position: relative;
+  overflow: hidden;
+}
+.dev-text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  margin: 0px;
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+  background-color: var(--link-color);
+
+  overflow: hidden;
+  transform: translateY(100%);
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+.dev a:hover .dev-text,
+.dev a:focus .dev-text {
+  transform: translateY(0);
 }
 .card-image {
   display: block;
@@ -679,7 +729,7 @@ button {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.dev p {
+.dev-content p {
   color: var(--secondary-color);
   font-weight: 400;
   font-size: 16px;
