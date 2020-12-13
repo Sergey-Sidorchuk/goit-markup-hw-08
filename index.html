@@ -60,7 +60,7 @@
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button type="button">Заказать услугу</button>
+          <button data-modal-open type="button">Заказать услугу</button>
         </div>
       </section>
       <!-- <h2>Особенности</h2> -->
@@ -432,5 +432,12 @@
         </div>
       </div>
     </footer>
+    <!--Модальное окно-->
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="modal-closed"></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
