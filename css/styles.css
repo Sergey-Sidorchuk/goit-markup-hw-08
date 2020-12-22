@@ -935,6 +935,8 @@ img {
 .form-label {
   position: relative;
 }
+/* checkbox */
+
 .checkbox .form-label {
   display: flex;
   flex-direction: row;
@@ -952,7 +954,7 @@ img {
 }
 
 .checkbox-input:checked + .check {
-  border-color: var(--link-color);
+  /* border-color: var(--link-color); */
   background: var(--link-color);
   background-image: url(..//images/icon/icon-check.svg);
   background-size: contain;
@@ -964,6 +966,14 @@ img {
   border-radius: 2px;
   border: 2px solid var(--main-color);
 }
+.checkbox-input:focus + .check {
+  border-color: var(--link-color);
+  /* background: var(--link-color); */
+  background-image: url(..//images/icon/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
 .form-button {
   display: flex;
   align-items: center;
