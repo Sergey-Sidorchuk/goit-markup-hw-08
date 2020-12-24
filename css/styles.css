@@ -880,6 +880,7 @@ img {
   max-width: 448px;
   padding: 11px 42px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 .form-input:focus-within {
   border: 1px solid var(--link-color);
@@ -952,23 +953,30 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.check::before {
+  content: "";
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  background-image: url(..//images/icon/icon-check.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 2px solid #212121;
+  border-radius: 2px;
+}
 
-.checkbox-input:checked + .check {
-  /* border-color: var(--link-color); */
+.checkbox-input:checked + .check::before {
+  border-color: var(--link-color);
   background: var(--link-color);
   background-image: url(..//images/icon/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
 }
 
-.check {
-  margin-right: 8px;
-  border-radius: 2px;
-  border: 2px solid var(--main-color);
-}
-.checkbox-input:focus + .check {
+.checkbox-input:focus + .check::before {
   border-color: var(--link-color);
-  /* background: var(--link-color); */
   background-image: url(..//images/icon/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
