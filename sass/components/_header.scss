@@ -1,0 +1,131 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+.page-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.logoweb {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  color: var(--link-color);
+}
+
+.accent {
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+}
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+  justify-content: space-around;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.site-nav a {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.site-nav li:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link.current {
+  color: var(--link-color);
+}
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link:hover {
+  color: var(--link-color);
+}
+.link:focus {
+  color: var(--link-color);
+}
+
+.link-tel {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-tel:hover {
+  color: var(--link-color);
+}
+.link-tel:focus {
+  color: var(--link-color);
+}
+
+.site-contacts {
+  display: flex;
+  padding-left: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+.site-contacts li:first-child {
+  margin-right: 50px;
+}
+.item {
+  position: relative;
+}
+.current::before {
+  content: "";
+
+  position: absolute;
+  left: 0px;
+  height: 4px;
+
+  display: block;
+  width: 100%;
+  background-color: var(--link-color);
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  bottom: -1px;
+  box-sizing: border-box;
+}
+
+.site-contacts .link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-contacts .link:hover {
+  color: var(--link-color);
+}
+.site-contacts .link:focus {
+  color: var(--link-color);
+}
+.section-title {
+  color: var(--main-color);
+  margin: 0px;
+}
+.icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

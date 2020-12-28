@@ -1,0 +1,153 @@
+.section-portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+.nav-button {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+}
+.nav-button li:not(:last-child) {
+  margin-right: 8px;
+}
+.nav-button li {
+  display: list-item;
+}
+.nav-button .work-list {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-color);
+  background: #f5f4fa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: 0px;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-left: 22px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.work-list:hover {
+  background: var(--link-color);
+  color: var(--tertiary-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.work-list:focus {
+  background: var(--link-color);
+  color: var(--tertiary-color);
+}
+.dev {
+  padding-left: 0px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.dev-content {
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  box-sizing: border-box;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.dev a {
+  display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.dev a:hover {
+  width: 370px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.dev a:focus {
+  background: inherit;
+}
+
+.dev li:nth-child(-n + 6) {
+  margin-bottom: 30px;
+}
+.dev li:not(:last-child) {
+  margin-right: 30px;
+}
+.dev li:nth-of-type(3n + 0) {
+  margin-right: 0px;
+}
+.dev-item {
+  position: relative;
+  overflow: hidden;
+}
+.dev-text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  margin: 0px;
+  height: 100%;
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--tertiary-color);
+  background-color: var(--link-color);
+
+  overflow: hidden;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.dev a:hover .dev-text,
+.dev a:focus .dev-text {
+  transform: translateY(0);
+}
+.card-image {
+  display: block;
+}
+.dev h2 {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.dev-content p {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  margin-top: 4px;
+  margin-bottom: 0px;
+}
+/* Модальное окно. backdrop*/
+.backdrop {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 1500ms cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
