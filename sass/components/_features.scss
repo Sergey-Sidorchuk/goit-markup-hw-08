@@ -1,5 +1,5 @@
 .section-features {
-  background: var(--tertiary-color);
+  background: $tertiary-color;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -47,6 +47,6 @@
   text-align: left;
   vertical-align: Top;
   letter-spacing: 3%;
-  color: var(--secondary-color);
+  color: $secondary-color;
   letter-spacing: 0.03em;
 }
