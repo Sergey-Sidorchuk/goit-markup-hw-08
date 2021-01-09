@@ -1,7 +1,6 @@
 @import "./utils/variables";
 
 @import "./base/common";
-@import "./base/container";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/features";
@@ -10,4 +9,5 @@
 @import "./components/clients";
 @import "./components/footer";
 @import "./components/modal";
-@import "./components/portfolio";
+@import "./components/portfolio-nav";
+@import "./components/portfolio-dev";
