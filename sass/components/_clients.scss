@@ -1,38 +1,48 @@
+// MOBILE
 .section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-clients h2 {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   padding: 0px;
   margin: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .icon-clients {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .icon-clients {
   padding: 0px;
   margin: 0px;
-  display: flex;
+  // display: flex;
 }
 
-.icon-clients li:not(:last-child) {
+// .icon-clients li:not(:last-child) {
+//   margin-right: 30px;
+// }
+.icon-clients li:nth-child(2n + 1) {
   margin-right: 30px;
 }
+.icon-clients li:nth-child(-n + 4) {
+  margin-bottom: 30px;
+}
+
 .section-clients a {
   padding: 0px;
   margin: 0px;
 }
 .logo-company {
   display: block;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid;
   border-radius: 4px;
@@ -50,10 +60,6 @@
     color: $link-color;
   }
 }
-// }
-// .logo-company:hover {
-//   color: $link-color;
-// }
 
 .icon-company {
   border-radius: 0px;
@@ -61,3 +67,67 @@
   margin: 0px;
   fill: currentColor;
 }
+
+// .section-clients {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+
+// .section-clients h2 {
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.17;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+//   padding: 0px;
+//   margin: 0px;
+//   margin-bottom: 50px;
+// }
+// .icon-clients {
+//   display: flex;
+//   align-items: center;
+// }
+// .icon-clients {
+//   padding: 0px;
+//   margin: 0px;
+//   display: flex;
+// }
+
+// .icon-clients li:not(:last-child) {
+//   margin-right: 30px;
+// }
+// .section-clients a {
+//   padding: 0px;
+//   margin: 0px;
+// }
+// .logo-company {
+//   display: block;
+//   width: 170px;
+//   height: 90px;
+//   border: 1px solid;
+//   border-radius: 4px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: #afb1b8;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+//     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover {
+//     color: $link-color;
+//   }
+//   &:focus {
+//     color: $link-color;
+//   }
+// }
+// // }
+// // .logo-company:hover {
+// //   color: $link-color;
+// // }
+
+// .icon-company {
+//   border-radius: 0px;
+//   padding: 0px;
+//   margin: 0px;
+//   fill: currentColor;
+// }

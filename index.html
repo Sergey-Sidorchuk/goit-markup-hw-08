@@ -20,12 +20,24 @@
     <!-- Шапка сайта -->
     <header class="page-header">
       <div class="container">
-        <nav class="nav">
-          <a href="">
-            <span class="logoweb">Web</span><span class="accent">Studio</span>
-          </a>
-
-          <ul class="site-nav">
+        <a href="">
+          <span class="logoweb">Web</span><span class="accent">Studio</span>
+        </a>
+        <button type="button" 
+        class="menu-button is-open"
+        aria-expanded="false"
+        aria-controls="menu-container" 
+        data-menu-button>
+        
+        <svg width="40" height="40" 
+        aria-label="Переключатель мобильного меню">
+        <use class="icon-close" href=./images/icon/symbol-defs.svg#close></use>
+        <use class="icon-menu" href=./images/icon/symbol-defs.svg#menu></use>
+      </svg>
+    </button>
+    <div class="menu-container is-open" id="menu-container" data-menu> 
+  <nav class="nav">
+<ul class="site-nav">
             <li class="item"><a href="" class="link current">Студия</a></li>
             <li>
               <a href="./portfolio.html" class="link">Портфолио</a>
@@ -51,6 +63,7 @@
             >
           </li>
         </ul>
+</div>   
       </div>
     </header>
     <main>
@@ -163,8 +176,8 @@
               <img
                 src="images/productdesigner.img.jpg"
                 alt="Product Designer"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="our-team">
                 <h3 class="title-name">Игорь Демьяненко</h3>
@@ -204,10 +217,11 @@
 
             <li class="team-card">
               <img
+                class="photo"
                 src="./images/frontenddeveloper.img.jpg"
                 alt="Frontend Developer"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="our-team">
                 <h3 class="title-name">Ольга Репина</h3>
@@ -248,8 +262,8 @@
               <img
                 src="./images/marketing.img.jpg"
                 alt="Marketing"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="our-team">
                 <h3 class="title-name">Николай Тарасов</h3>
@@ -290,8 +304,8 @@
               <img
                 src="./images/uidesigner.img.jpg"
                 alt="UI Designer"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
               <div class="our-team">
                 <h3 class="title-name">Михаил Ермаков</h3>
@@ -521,5 +535,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="/js/menu.js"></script>
   </body>
 </html>

@@ -1,24 +1,25 @@
+// MOBILE
 .section-features {
   background: $tertiary-color;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .features {
-  display: flex;
+  // display: flex;
+  text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
+  // padding-top: 60px;
+  // padding-bottom: 60px;
 }
 .features-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 120px;
-  background: #f5f4fa;
-  border-radius: 4px;
+  padding: 25px;
   margin-bottom: 30px;
+  text-align: center;
+  background-color: #f5f4fa;
 }
+
 .features-icon .icon {
   width: 70px;
   height: 70px;
@@ -29,7 +30,7 @@
   margin-bottom: 0px;
 }
 .features li:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .section-features .section-title {
@@ -50,3 +51,56 @@
   color: $secondary-color;
   letter-spacing: 0.03em;
 }
+
+// .section-features {
+//   background: $tertiary-color;
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
+// .features {
+//   display: flex;
+//   margin-top: 0px;
+//   margin-bottom: 0px;
+//   padding-left: 0px;
+// }
+// .features-icon {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   width: 270px;
+//   height: 120px;
+//   background: #f5f4fa;
+//   border-radius: 4px;
+//   margin-bottom: 30px;
+// }
+// .features-icon .icon {
+//   width: 70px;
+//   height: 70px;
+//   margin: 0px;
+// }
+// .features p {
+//   margin-top: 10px;
+//   margin-bottom: 0px;
+// }
+// .features li:not(:last-child) {
+//   margin-right: 30px;
+// }
+
+// .section-features .section-title {
+//   font-weight: 700;
+//   font-size: 14px;
+//   line-height: 16px;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+// }
+
+// .section-features .text {
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 1.71;
+//   text-align: left;
+//   vertical-align: Top;
+//   letter-spacing: 3%;
+//   color: $secondary-color;
+//   letter-spacing: 0.03em;
+// }
