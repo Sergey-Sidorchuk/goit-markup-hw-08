@@ -5,13 +5,23 @@
   padding-bottom: 60px;
 }
 .features {
-  // display: flex;
   text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 .features-icon {
   padding: 25px;
@@ -32,13 +42,42 @@
 .features li:not(:last-child) {
   margin-bottom: 30px;
 }
-
+@media screen and (min-width: 768px) {
+  .features li:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features li:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .features li {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features li:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features li {
+    width: calc((100% - 3 * 30px) / 4);
+  }
+}
 .section-features .section-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .section-features .text {
