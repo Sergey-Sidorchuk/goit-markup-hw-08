@@ -36,6 +36,15 @@
   }
 }
 .icon-clients li {
+  width: 210px;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+
   @media screen and (max-width: 767px) {
     &:nth-child(2n + 1) {
       margin-right: 30px;
@@ -48,28 +57,22 @@
   }
 
   @media screen and (min-width: 768px) {
+    &:not(:nth-child(3n)) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
     &:nth-child(-n + 3) {
       margin-bottom: 30px;
-      padding-left: 0px;
     }
-    @media screen and (min-width: 768px) {
-      &:not(:nth-child(3n)) {
-        margin-right: 30px;
-      }
-
-      &:not(:last-child) {
-        margin-right: 30px;
-        margin-bottom: 0px;
-      }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0px;
     }
   }
 }
-// .icon-clients li:nth-child(2n + 1) {
-//   margin-right: 30px;
-// }
-// .icon-clients li:nth-child(-n + 4) {
-//   margin-bottom: 30px;
-// }
 
 .section-clients a {
   padding: 0px;
@@ -77,7 +80,7 @@
 }
 .logo-company {
   display: block;
-  width: 210px;
+  width: 100%;
   height: 90px;
   border: 1px solid;
   border-radius: 4px;
