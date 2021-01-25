@@ -15,6 +15,11 @@
   margin-top: 30px;
   margin-bottom: 0px;
   padding-left: 0px;
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .team-card {
@@ -24,11 +29,30 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-.team-card:not(:last-child) {
-  margin-bottom: 30px;
-}
 
+  @media screen and(min-width:768px) {
+    width: 354px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 270px;
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-child(-n + 2) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+      margin-bottom: 0px;
+    }
+  }
+}
 .section-team .section-title {
   font-weight: 700;
   font-size: 28px;
@@ -36,6 +60,10 @@
   text-align: center;
   vertical-align: Top;
   letter-spacing: 3%;
+
+  @media screen and(min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 .section-team .title-name {
   font-weight: 500;
@@ -176,4 +204,4 @@
 //   color: $secondary-color;
 //   margin-top: 10px;
 //   margin-bottom: 0px;
-// }
+//
