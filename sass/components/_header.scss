@@ -30,13 +30,11 @@
   justify-content: center;
 
   @media screen and (min-width: 768px) {
-    display: flex;
     align-items: flex-end;
     margin-left: 88px;
   }
   @media screen and (min-width: 1200px) {
     align-items: center;
-    display: flex;
     margin-left: 93px;
   }
 }
@@ -257,8 +255,6 @@
   }
   @media screen and (min-width: 1200px) {
     font-size: 14px;
-    line-height: 1.16;
-    letter-spacing: 0.02em;
   }
 }
 
