@@ -1,10 +1,16 @@
 .section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .portfolio {
   display: flex;
   flex-direction: column;
+  border: solid 1px red;
 }
 .nav-button {
   margin-top: 0px;
@@ -18,18 +24,30 @@
     flex-wrap: wrap;
     justify-content: start;
   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 0px;
+  }
 }
 .nav-button li {
-  // margin-right: 8px;
   @media screen and(max-width:767px) {
     &:not(:last-child) {
       margin-right: 8px;
       margin-bottom: 15px;
     }
   }
+  @media screen and(min-width:768px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
   @media screen and(max-width:767px) {
     &:nth-child(4n) {
       margin-bottom: 0px;
+    }
+  }
+  @media screen and(min-width:1200px) {
+    & :not(:last-child) {
+      margin-right: 8px;
     }
   }
 }
