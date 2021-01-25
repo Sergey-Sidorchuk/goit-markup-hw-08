@@ -128,7 +128,7 @@ img {
 .logoweb {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.17;
   color: #2196f3;
 }
@@ -137,7 +137,7 @@ img {
   font-family: "Raleway", sans-serif;
   color: #000000;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.17;
 }
 
@@ -335,7 +335,7 @@ img {
 .link-tel {
   color: #757575;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -399,10 +399,10 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .site-contacts .link {
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.16;
     letter-spacing: 0.02em;
   }
 }
@@ -1123,9 +1123,16 @@ img {
 .footer .logoweb {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.17;
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .logoweb {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .footer address {
@@ -1143,8 +1150,15 @@ img {
   font-family: "Raleway", sans-serif;
   color: #ffffff;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.17;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .accent {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .footer p {
@@ -1496,20 +1510,32 @@ img {
 }
 
 .form-label span {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-label span {
+    font-size: 14px;
+  }
+}
+
 .form-label a {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #2196f3;
   text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-label a {
+    font-size: 14px;
+  }
 }
 
 .form-icon {
@@ -1660,7 +1686,6 @@ img {
   cursor: pointer;
 }
 
-/* Модальное окно. backdrop*/
 .section-portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1681,7 +1706,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  outline: solid 1px red;
 }
 
 .nav-button {

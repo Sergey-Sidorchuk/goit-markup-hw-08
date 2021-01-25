@@ -1,14 +1,8 @@
-// MOBILE
 .page-header {
   border-bottom: 1px solid #ececec;
   position: relative;
 }
 .page-header .container {
-  // @media screen and (min-width: 480px) and(max-width:767px) {
-  //   & .container {
-  //     width: 480px;
-  //   }
-  // }
   @media screen and (max-width: 767px) {
     position: fixed;
     z-index: 99;
@@ -22,18 +16,12 @@
     background-color: $tertiary-color;
   }
   @media screen and (min-width: 768px) {
-    // width: 768px;
     display: flex;
     align-items: center;
     min-height: 80px;
   }
   @media screen and (min-width: 1200px) {
-    // width: 1200px;
-    // padding-left: 15px;
-    // padding-right: 15px;
-    // display: flex;
     justify-content: space-between;
-    // align-items: center;
   }
 }
 .nav {
@@ -55,7 +43,7 @@
 .logoweb {
   font-family: $secondary-font;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.17;
   color: $link-color;
 }
@@ -64,7 +52,7 @@
   font-family: $secondary-font;
   color: #000000;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.17;
 }
 .menu-button {
@@ -217,13 +205,12 @@
 }
 .link.current {
   position: relative;
-  // padding-bottom: 8px;
 }
 
 .link-tel {
   color: $secondary-color;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -243,7 +230,6 @@
     font-size: 14px;
   }
 }
-
 .site-contacts {
   @media screen and (max-width: 767px) {
     padding-left: 0px;
@@ -269,12 +255,13 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 1.16;
     letter-spacing: 0.02em;
   }
 }
+
 .site-contacts li:first-child {
   @media screen and (max-width: 767px) {
     margin-bottom: 16px;
@@ -327,134 +314,3 @@
   fill: currentColor;
   margin-right: 10px;
 }
-
-// DESKTOP
-// .page-header {
-//   border-bottom: 1px solid #ececec;
-// }
-// .page-header .container {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
-// .nav {
-//   display: flex;
-//   align-items: center;
-// }
-// .logoweb {
-//   font-family: $secondary-font;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.17;
-//   color: $link-color;
-// }
-
-// .accent {
-//   font-family: $secondary-font;
-//   color: #000000;
-//   font-weight: 700;
-//   font-size: 26px;
-//   line-height: 1.17;
-// }
-// .site-nav {
-//   display: flex;
-//   margin-left: 93px;
-//   justify-content: space-around;
-//   padding-left: 0px;
-//   margin-top: 0px;
-//   margin-bottom: 0px;
-// }
-// .site-nav a {
-//   display: inline-block;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-// }
-// .site-nav li:not(:last-child) {
-//   margin-right: 50px;
-// }
-// .site-nav .link.current {
-//   color: $link-color;
-// }
-// .link {
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   color: $primary-color;
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     color: $link-color;
-//   }
-// }
-
-// .link-tel {
-//   color: $secondary-color;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   justify-content: center;
-//   align-items: center;
-//   display: flex;
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     color: $link-color;
-//   }
-// }
-
-// .site-contacts {
-//   display: flex;
-//   padding-left: 0px;
-//   padding: 0px;
-//   margin-bottom: 0px;
-//   margin-top: 0px;
-// }
-// .site-contacts li:first-child {
-//   margin-right: 50px;
-// }
-// .item {
-//   position: relative;
-// }
-// .current::before {
-//   content: "";
-
-//   position: absolute;
-//   left: 0px;
-//   height: 4px;
-
-//   display: block;
-//   width: 100%;
-//   background-color: $link-color;
-//   border-bottom-left-radius: 4px;
-//   border-bottom-right-radius: 4px;
-//   border-top-left-radius: 4px;
-//   border-top-right-radius: 4px;
-//   bottom: -1px;
-//   box-sizing: border-box;
-// }
-
-// .site-contacts .link {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   color: $secondary-color;
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     color: $link-color;
-//   }
-// }
-
-// .section-title {
-//   color: $primary-color;
-//   margin: 0px;
-// }
-// .icon {
-// fill: currentColor;
-// margin-right: 10px;
-//
