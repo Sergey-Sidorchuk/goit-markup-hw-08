@@ -327,6 +327,15 @@ img {
 }
 
 .link-tel {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #757575;
   font-weight: 500;
   font-size: 18px;
@@ -342,6 +351,9 @@ img {
 
 @media screen and (min-width: 768px) {
   .link-tel {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.02em;
@@ -428,7 +440,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .current::before {
-    bottom: -28px;
+    bottom: -31px;
   }
 }
 
@@ -477,7 +489,6 @@ img {
 .overlay {
   border: 1px solid #000000;
   height: 400px;
-  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//..//images/hero-mobile@1x.jpg);
@@ -794,9 +805,16 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
+.team-card:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .team-card {
     width: 354px;
+  }
+  .team-card:not(:last-child) {
+    margin-bottom: 0px;
   }
 }
 
@@ -1100,6 +1118,9 @@ img {
   .footer .foot {
     margin-right: 70px;
     margin-bottom: 0px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
   }
 }
 
@@ -1276,35 +1297,32 @@ img {
   }
 }
 
-.footer-input {
-  width: 358px;
-  height: 50px;
-  left: 815px;
-  top: 2785px;
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background: inherit;
-  color: #ffffff;
-}
-
 @media screen and (min-width: 480px) {
   .footer-input {
     min-width: 450px;
+    height: 50px;
+    left: 815px;
+    top: 2785px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: inherit;
+    color: #ffffff;
   }
 }
 
-@media screen and (min-width: 480px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer-input {
     margin-bottom: 0px;
     margin-right: 12px;
+    min-width: 358px;
   }
 }
 
@@ -1384,7 +1402,6 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   max-width: 100%;
-  overflow-x: hidden;
 }
 
 @media screen and (min-width: 480px) {
@@ -1837,7 +1854,6 @@ img {
 }
 
 .dev-link:hover {
-  width: 370px;
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -1920,6 +1936,7 @@ img {
 
 .card-image {
   display: block;
+  width: 100%;
 }
 
 @media screen and (min-width: 1200px) {

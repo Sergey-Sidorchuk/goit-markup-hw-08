@@ -77,9 +77,8 @@
     display: none;
   }
 }
-
-@media screen and (max-width: 767px) {
-  .menu-container {
+.menu-container {
+  @media screen and (max-width: 767px) {
     display: none;
     position: absolute;
     text-align: center;
@@ -206,6 +205,9 @@
 }
 
 .link-tel {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   color: $secondary-color;
   font-weight: 500;
   font-size: 18px;
@@ -218,6 +220,7 @@
     color: $link-color;
   }
   @media screen and (min-width: 768px) {
+    justify-content: flex-start;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.02em;
@@ -284,7 +287,7 @@
   box-sizing: border-box;
 
   @media screen and (min-width: 768px) {
-    bottom: -28px;
+    bottom: -31px;
   }
   @media screen and (min-width: 1200px) {
     bottom: -1px;

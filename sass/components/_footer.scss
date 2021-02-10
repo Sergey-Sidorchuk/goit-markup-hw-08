@@ -27,6 +27,7 @@
   @media screen and(min-width:1200px) {
     margin-right: 70px;
     margin-bottom: 0px;
+    align-items: end;
   }
 }
 .foot ul {
@@ -163,27 +164,26 @@
 .footer-input {
   @media screen and (min-width: 480px) {
     min-width: 450px;
-    @media screen and (min-width: 1200px) {
-      margin-bottom: 0px;
-      margin-right: 12px;
-    }
+    height: 50px;
+    left: 815px;
+    top: 2785px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background: inherit;
+    color: $tertiary-color;
   }
-
-  width: 358px;
-  height: 50px;
-  left: 815px;
-  top: 2785px;
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background: inherit;
-  color: $tertiary-color;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0px;
+    margin-right: 12px;
+    min-width: 358px;
+  }
 }
 .footer-button {
   display: flex;
