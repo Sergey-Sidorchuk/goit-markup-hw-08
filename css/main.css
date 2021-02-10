@@ -149,7 +149,7 @@ img {
   fill: #2196f3;
 }
 
-.menu-button .icon-close {
+.menu-button.icon-close {
   display: none;
 }
 
